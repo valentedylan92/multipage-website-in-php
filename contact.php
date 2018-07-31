@@ -18,6 +18,10 @@
         <div class="col-12">
             <?= $status ?>
             <form enctype="multipart/form-data" method="post" action="contact-treatment.php">
+                <label for="contact-title">Adresse mail SMTP</label>
+                <input type="text" name="username" id="username"><br>
+                <label for="contact-title">Mot de passe mail SMTP</label>
+                <input type="password" name="password" id="password"><br>
                 <label for="contact-title">Titre</label>
                 <input type="radio" name="contact-title" value="Ms"> Mme
                 <input type="radio" name="contact-title" value="Mrs"> Melle
