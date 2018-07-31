@@ -1,0 +1,29 @@
+.listings{
+  @include flex(row,space-between,flex-start);
+
+  &__left{
+    padding-left: 20px;
+  }
+  &__right{
+    padding-left: 20px;
+  }
+
+  &__description{
+    font-size: 20px;
+    margin-bottom: 25px;
+    line-height: 1.5
+  }
+}
+
+.listing{
+  &__item{
+    font-size: 18px;
+    padding-left: 15px;
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+  &__icon{
+    margin-right: 15px;
+    color: #ff7c2d;
+  }
+}
