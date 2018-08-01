@@ -24,11 +24,11 @@ function getArticlesExcerpts() {
         // console.log(temp);
         $('#mainContent').empty();
         $.each(temp, function(key, obj) {
-            $id = obj.v.id;
-            $articleExcerpt = '<h1 class="entry-title"><a onclick="getArticle(' + obj.v.id + ')">' + obj.v.title + '</a></h1>';
-            $articleExcerpt += '<p>' + obj.v.date + '</p>';
-            $articleExcerpt += '<div>' + obj.v.excerpt + '</div>';
-            $('#mainContent').append($articleExcerpt);
+            let id = obj.v.id;
+            let articleExcerpt = '<h1 class="entry-title"><a onclick="getArticle(' + obj.v.id + ')">' + obj.v.title + '</a></h1>';
+            articleExcerpt += '<p>' + obj.v.date + '</p>';
+            articleExcerpt += '<div>' + obj.v.excerpt + '</div>';
+            $('#mainContent').append(articleExcerpt);
         });
     });
 }
@@ -52,26 +52,54 @@ function getAllArticles() {
         // console.log(temp);
         $('#mainContent').empty();
         $.each(temp, function(key, obj) {
-            $article = '<h1 class="entry-title">' + obj.v.title + '</h1>';
-            $article += '<p>' + obj.v.date + '</p>';
-            $article += '<div>' + obj.v.content + '</div>';
-            $('#mainContent').append($article);
+            article = '<h1 class="entry-title">' + obj.v.title + '</h1>';
+            article += '<p>' + obj.v.date + '</p>';
+            article += '<div>' + obj.v.content + '</div>';
+            $('#mainContent').append(article);
         });
     });
 }
 
-// Get article by id
+/* Get article by id */
 function getArticle(x) {
+    let indexes = [];
+    let length = 0;
+    // let test = [];
     $.getJSON("includes/articles/articles.json", function(data) {
         $.each(data.articles, function(i, item) {
+            indexes.push(item.id);
+            console.log(item);
+            length++;
+        });
+        let key = indexes.indexOf(x);
+        let previous = indexes.find(function(element) {
+            return element < x;
+        });
+        let next = indexes.find(function(element) {
+            return element > x;
+        });
+        // console.log(indexes);
+        // let $previous = $indexes[x - 1];
+        // let next = indexes[x + 1];
+        $.each(data.articles, function(i, item) {
             if (item.id === x) {
-                $article = '<h1 class="entry-title">' + item.title + '</h1>';
-                $article += '<p>' + item.date + '</p>';
-                $article += '<div>' + item.content + '</div>';
+                let article = '<h1 class="entry-title">' + item.title + '</h1>';
+                article += '<p>' + item.date + '</p>';
+                article += '<div>' + item.content + '</div>';
                 $('#mainContent').empty();
-                $link = '<a onclick="getArticlesExcerpts()">Tous les articles</a>';
-                $('#mainContent').append($link);
-                $('#mainContent').append($article);
+                let linkAll = '<a id="allArticlesBtn" onclick="getArticlesExcerpts()">Tous les articles</a>';
+                let linkPrev = '<a id="prevArticlesBtn" onclick="getArticle(' + (previous) + ')">Article précédent</a>';
+                let linkNext = '<a id="nextArticlesBtn" onclick="getArticle(' + (next) + ')">Article suivant</a>';
+                $('#mainContent').append(linkAll);
+                $('#mainContent').append(article);
+                $('#mainContent').append(linkPrev);
+                $('#mainContent').append(linkNext);
+                if (key == 0) {
+                    $('#prevArticlesBtn').addClass('disabled');
+                }
+                if (key == (length - 1)) {
+                    $('#nextArticlesBtn').addClass('disabled');
+                }
             }
         });
     });

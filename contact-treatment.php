@@ -10,8 +10,12 @@
 //             <input type="submit" value="send">
 //             </form>';
 // }
-$username = filter_var($_POST['username'], FILTER_SANITIZE_STRING);
-$password = filter_var($_POST['password'], FILTER_SANITIZE_STRING);
+if(file_exists('includes/auth.php')){
+    include('includes/auth.php');
+} else {
+    $username = filter_var($_POST['username'], FILTER_SANITIZE_STRING);
+    $password = filter_var($_POST['password'], FILTER_SANITIZE_STRING);
+}
 
 require_once('vendor/verot/class.upload.php/src/class.upload.php');
 
