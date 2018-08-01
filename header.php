@@ -1,9 +1,16 @@
 <header class="header">
-  <ul class="header__menu">
-    <li class="header__item"><a href="" class="header__link"><img src="" alt="Logo Lhiving Small" class="header__logo"></a></li>
-    <li class="header__item"><a href="" class="header__link">Organisation</a></li>
-    <li class="header__item"><a href="" class="header__link">Articles</a></li>
-    <li class="header__item"><a href="" class="header__link">Documents</a></li>
-    <li class="header__item"><a href="" class="header__link">Contact</a></li>
-  </ul>
+  <nav class="navbar navbar-expand-md header__navbar container">
+  <a class="navbar-brand" href="#"><img src="assets/img/logo.gif" alt="" class="header__logo"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"><i class="header__icon fas fa-bars"></i></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link header__item active" href="#">Organisation</a>
+      <a class="nav-item nav-link header__item " href="#">Articles</a>
+      <a class="nav-item nav-link header__item " href="#">Documents</a>
+      <a class="nav-item nav-link header__item " href="#">Contact</a>
+    </div>
+  </div>
+</nav>
 </header>

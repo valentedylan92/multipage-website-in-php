@@ -1,0 +1,40 @@
+.organisation__title{
+  text-align: center;
+  font-size: 45px;
+  font-weight: bold;
+
+}
+.personnel{
+  &__title{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  &__subtitle{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  &__container{
+    @include flex(row,flex-start,center);
+    flex-wrap: wrap;
+  }
+  &__item{
+    width: 25%;
+    @include flex (column,center,center);
+    margin: 20px 0;
+  }
+  &__name{
+    font-style: italic;
+    padding-top: 10px;
+    font-size: 18px;
+  }
+  &__img{
+    border-radius: 100%;
+  }
+
+  &__subtext{
+    font-style: italic;
+    font-size: 15px;
+    text-align:right;
+  }
+}

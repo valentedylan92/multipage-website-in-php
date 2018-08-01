@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +8,15 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/print.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <title>Lhiving</title>
 </head>
 <body>
-
+  <?php
+    include 'header.php'
+  ?>
   <main class="main">
     <section class="section section--home">
       <div class="section__container container home">
@@ -58,7 +63,7 @@
     </section>
     <section class="section section--box">
       <div class="container box-info">
-        <div class="box-info__left col-md-6"><img src="http://placekitten.com/500/550" alt="" class="box-info__img"></div>
+        <div class="box-info__left col-md-6"> <!--<img src="http://placekitten.com/500/550" alt="" class="box-info__img">--></div>
         <div class="box-info__right col-md-6">
           <p class="box-info__text">Pour pouvoir obtenir un rendez-vous à l’antenne, il n’y a pas de limitation géographique, mais pour l’accompagnement ambulatoire où semi-résidentiel, la personne doit résider dans la Région de Bruxelles-Capitale.</p>
           <p class="box-info__text">Il y a une grande marge de flexibilité entre les différents piliers. La transition de l’antenne vers un accompagnement se passe toujours par une consultation au sein de l’équipe de Lhiving, dans laquelle un accompagnateur fixe est nommé. Une personne peut toujours entrer en guidance pour une période courte ou longue si nécessaire, par exemple suite à un déménagement, une aggravation de la maladie, une agrandissement de famille ou d’autres événements drastiques.</p>
@@ -103,7 +108,11 @@
       <div class="section__container container">
         <h2 class="section__title">Soutenez nous !</h2>
         <p class="section__text">
-           Lhiving asbl offre de l’aide psychosociale aux personnes (ainsi qu’à leurs familles) atteintes du VIH ou une autre maladie chronique grave, qui se trouvent dans un situation défavorisée. Notre objectif est d’améliorer la santé et le bien-être en général de nos clients afin qu’ils puissent mener une vie assez autonome dans la société et y participer à part entière. Lhiving les aide à trouver un endroit convenable et abordable pour vivre et fait un accompagnement plus ou moins intensif. On cherche toujours à revaloriser l’énergie que les gens portent en eux.
+          Venez-nous en aide, pour que nous puissions aider plus et mieux !
+          Nous apprécions toute aide financière et nous sommes autorisés à délivrer une attestation pour exonération fiscale pour les libéralités à partir de 40 €.
+        </p>
+        <p class="section__text">
+          Notre n° de compte: BE29 0013 0051 4564.
         </p>
         <a href="" class="section__cta"></a>
       </div>
