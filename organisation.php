@@ -76,7 +76,7 @@
             <p class="personnel__name">Caroline Mager</p>
           </div>
         </div>
-        <h3 class="personnel__subtitle">Coordinatrice</h3>
+        <h3 class="personnel__subtitle">Conseil d’Administration</h3>
         <div class="personnel__container">
           <div class="personnel__item col-md-3 col-6">
             <img src="http://placekitten.com/85/85" alt="" class="personnel__img">
@@ -135,7 +135,49 @@
       </div>
     </section>
     <section class="section section--subside">
-      <div class="section__container container"></div>
+      <div class="section__container container subside">
+        <h2 class="subside__title">Subside</h2>
+        <h3 class="subside__subtitle">Soutenue financièrement par :</h3>
+        <div class="subside__container row">
+          <div class="subside__item col-md-4 offset-md-2 col-6">
+            <img src="http://placekitten.com/85/85" alt="" class="subside__img">
+            <p class="subside__name">Vlaamse Gemeenschapscommissie</p>
+          </div>
+          <div class="subside__item col-md-4 col-6">
+            <img src="http://placekitten.com/85/85" alt="" class="subside__img">
+            <p class="subside__name">la Commission Communautaire Commune</p>
+          </div>
+        </div>
+          <h3 class="subside__subtitle">Nos partenaires :</h3>
+          <div class="subside__container row">
+            <div class="subside__item col-md-4 col-6">
+              <img src="http://placekitten.com/85/85" alt="" class="subside__img">
+              <p class="subside__name">Brussels Gay Sports asbl</p>
+            </div>
+            <div class="subside__item col-md-4 col-6">
+              <img src="http://placekitten.com/85/85" alt="" class="subside__img">
+              <p class="subside__name">Caritas Daden Gevraagd</p>
+            </div><div class="subside__item col-md-4 col-6">
+              <img src="http://placekitten.com/85/85" alt="" class="subside__img">
+              <p class="subside__name">Belfius SOS Fonds</p>
+            </div>
+            <div class="subside__item col-md-4 col-6">
+              <img src="http://placekitten.com/85/85" alt="" class="subside__img">
+              <p class="subside__name">Koning Boudewijnstichting</p>
+            </div><div class="subside__item col-md-4 col-6">
+              <img src="http://placekitten.com/85/85" alt="" class="subside__img">
+              <p class="subside__name">Lionsclub Brussel Munt</p>
+            </div>
+            <div class="subside__item col-md-4 col-6">
+              <img src="http://placekitten.com/85/85" alt="" class="subside__img">
+              <p class="subside__name">Welzijnszorg vzw</p>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
     </section>
 
   </main>

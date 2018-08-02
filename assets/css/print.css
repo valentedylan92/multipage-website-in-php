@@ -214,6 +214,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
+  padding-bottom: 40px;
 }
 .personnel__item {
   width: 25%;
@@ -288,6 +289,41 @@ body {
     min-height: 250px;
   }
 }
+.subside__title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.subside__subtitle {
+  font-size: 20px;
+  font-weight: bold;
+}
+.subside__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 40px;
+}
+.subside__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+.subside__name {
+  font-style: italic;
+  padding-top: 10px;
+  font-size: 18px;
+}
+.subside__subtext {
+  font-style: italic;
+  font-size: 15px;
+  text-align: right;
+}
+
 .header__navbar {
   height: 80px;
 }
