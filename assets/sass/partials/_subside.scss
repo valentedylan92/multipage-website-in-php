@@ -1,0 +1,31 @@
+.subside{
+  &__title{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  &__subtitle{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  &__container{
+    @include flex(row,flex-start,center);
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+  }
+  &__item{
+    @include flex (column,center,center);
+    padding: 20px 0;
+  }
+  &__name{
+    font-style: italic;
+    padding-top: 10px;
+    font-size: 18px;
+  }
+
+  &__subtext{
+    font-style: italic;
+    font-size: 15px;
+    text-align:right;
+  }
+}

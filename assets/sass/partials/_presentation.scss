@@ -1,0 +1,7 @@
+.section--presentation{
+  width: 100%;
+  min-height:400px;
+  background: #0087a9;
+  color: white;
+  @include center-flex;
+}
