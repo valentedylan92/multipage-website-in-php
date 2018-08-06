@@ -3,7 +3,7 @@
     // include('includes/articles/10.php');
     // printHeader();
     ?>
-<div id="mainContent">
+<div id="mainContent" class="container">
     
 </div>
 <?php

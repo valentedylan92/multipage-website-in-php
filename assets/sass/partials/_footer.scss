@@ -1,0 +1,35 @@
+footer {
+    background-color: $secondary-color;
+    color: $primary-color;
+    width: 100%;
+    a {
+        color: $primary-color;
+    }
+    a:hover {
+        color: $tertiary-color;
+        transition: color 1s ease;
+        text-decoration: none;
+    }
+    ul {
+        padding: 0;
+    }
+    ul li {
+        list-style: none;
+    }
+    .container {
+        padding-bottom: 0;
+    }
+    .nav-link {
+        padding: 0.3em 1em;
+    }
+    .listing__item {
+        margin-bottom: 10px;
+    }
+    #map {
+        height: 200px;
+    }
+    #copyright {
+        text-align: center;
+        margin-top: 1em;
+    }
+}

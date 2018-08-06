@@ -16,12 +16,7 @@
 ?>
 
 <div id="mainContent" class="container">
-    <h2>Contact</h2>
-    <!-- <div class="row">
-        <div class="col-4">First</div>
-        <div class="col-4">Second</div>
-        <div class="col-4">Third</div>
-    </div> -->
+    <!-- <h2>Contact</h2> -->
     <div class="row">
         <div class="col-12">
             <?= $status ?>
@@ -47,7 +42,8 @@
                 <label for="contact-format">Format de réponse souhaité</label>
                 <input type="radio" name="contact-format" value="html"> HTML
                 <input type="radio" name="contact-format" value="txt"> Texte<br>
-                <input type="file" size="32" name="contact-picture"><br>
+                <label for="contact-picture">Photo</label>
+                <input type="file" size="32" id="contact-picture" name="contact-picture"><br>
                 <?php addAuthFields(); ?>
                 <input type="submit" name="submit" value="Envoyer">
             </form>
