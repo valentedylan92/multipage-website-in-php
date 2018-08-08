@@ -25,9 +25,13 @@ function getArticlesExcerpts() {
         $('#mainContent').empty();
         $.each(temp, function(key, obj) {
             let id = obj.v.id;
-            let articleExcerpt = '<h1 class="entry-title"><a onclick="getArticle(' + obj.v.id + ')">' + obj.v.title + '</a></h1>';
-            articleExcerpt += '<p>' + obj.v.date + '</p>';
-            articleExcerpt += '<div>' + obj.v.excerpt + '</div>';
+            let articleExcerpt = '<div class="row">';
+            articleExcerpt = '<div class="article-item col-12">';
+            articleExcerpt += '<h1 class="article-title"><a onclick="getArticle(' + obj.v.id + ')">' + obj.v.title + '</a></h1>';
+            articleExcerpt += '<p class="article-date">' + obj.v.date + '</p>';
+            articleExcerpt += '<div class="article-content">' + obj.v.excerpt + '</div>';
+            articleExcerpt += '</div>';
+            articleExcerpt += '</div>';
             $('#mainContent').append(articleExcerpt);
         });
     });
@@ -52,9 +56,13 @@ function getAllArticles() {
         // console.log(temp);
         $('#mainContent').empty();
         $.each(temp, function(key, obj) {
-            article = '<h1 class="entry-title">' + obj.v.title + '</h1>';
-            article += '<p>' + obj.v.date + '</p>';
-            article += '<div>' + obj.v.content + '</div>';
+            let article = '<div class="row">';
+            article = '<div class="article-item col-12">';
+            article += '<h1 class="article-title"><a onclick="getArticle(' + obj.v.id + ')">' + obj.v.title + '</a></h1>';
+            article += '<p class="article-date">' + obj.v.date + '</p>';
+            article += '<div class="article-content">' + obj.v.content + '</div>';
+            article += '</div>';
+            article += '</div>';
             $('#mainContent').append(article);
         });
     });
@@ -78,9 +86,8 @@ function getArticle(x) {
         let next = indexes.find(function(element) {
             return element > x;
         });
-        // console.log(indexes);
-        // let $previous = $indexes[x - 1];
-        // let next = indexes[x + 1];
+        console.log("length");
+        console.log(length);
         $.each(data.articles, function(i, item) {
             if (item.id === x) {
                 let article = '<h1 class="entry-title">' + item.title + '</h1>';
