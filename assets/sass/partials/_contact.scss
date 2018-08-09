@@ -2,33 +2,36 @@ form {
     // text-align: center;
     label,
     input {
-        display: inline-block;
+        // display: inline-block;
         font-size: 1.2em;
+        display: block;
     }
     label {
-        width: 49%;
-        text-align: right;
+        // width: 49%;
+        // text-align: right;
+        margin-bottom: 0;
     }
     input {
-        margin-bottom: 0.5em;
+        // margin-bottom: 0.5em;
     }
     input:not([type="submit"]):not([type="file"]) {
         // width: 25%;
-        padding: 0.5em;
+        padding: 0.5em 0.5em 0;
         border: none;
         border-bottom: 2px solid $secondary-color;
-        margin-left: 1em;
+        // margin-left: 1em;
     }
     input[type="radio"] {
         width: auto;
         margin-bottom: 0.5em;
         margin-left: 1em;
+        display: inline-block;
     }
     input:not([type="radio"]) {
         width: 300px;
     }
     input[type="file"] {
-        margin-left: 1em;
+        // margin-left: 1em;
     }
     input[type="submit"] {
         // margin: 0 0 1em calc(49% + 1em);
@@ -46,10 +49,10 @@ form {
         transition: color 1s ease, background 1s ease;
     }
     select {
-        margin: 1em;
+        // margin: 1em;
     }
     textarea {
-        margin-left: 1em;
+        // margin-left: 1em;
         width: 300px;
     }
 }

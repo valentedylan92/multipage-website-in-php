@@ -74,10 +74,13 @@ if(isset($firstName) && isset($surname) && isset($title) && isset($email)){
     $data .= 'message from ' . $email . "\n";
 }
 if(isset($subject)){
-    $data .= 'Concerns : ' . $subject . "\n";
+    $data .= "Concerns : \n";
+    $data .= $subject . "\n";
 }
 if(isset($message)){
+    $data .= "Message : \n";
     $data .= $message . "\n";
+    $data .= "\\\\\\end of entry///\n";
 }
 $data .= "\n";
 fwrite($handle, $data);
@@ -94,7 +97,7 @@ require 'vendor/phpmailer/phpmailer/src/OAuth.php';
 require 'vendor/phpmailer/phpmailer/src/POP3.php';
 //Create a new PHPMailer instance
 $mail = new PHPMailer;
-// try {
+try {
 // Tell PHPMailer to use SMTP
 $mail->isSMTP();
 //Enable SMTP debugging
@@ -138,27 +141,27 @@ $mail->addAttachment('logs/pictures/'.$firstName.'-'.$surname.'-picture.jpg');
 echo '1';
 // try {
 //     echo '2';
-//     $mail->send();
-// echo 'Message has been sent';
-// } catch (Exception $e) {
-//     echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
-// }
-// send the message, check for errors
-if(!$mail->send()) {
-    echo '2';
-    echo "Mailer Error: " . $mail->ErrorInfo;
-} else {
-    echo '3';
-    echo "Message sent!";
+    $mail->send();
+echo 'Message has been sent';
+} catch (Exception $e) {
+    echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
 }
+// send the message, check for errors
+// if(!$mail->send()) {
+//     echo '2';
+//     echo "Mailer Error: " . $mail->ErrorInfo;
+// } else {
+//     echo '3';
+//     echo "Message sent!";
+// }
 unset($mail);
 
 
 
 
 /* Redirection to contact form */
-// echo '<script type="text/javascript">
-//            window.location = "http://localhost:8888/multipage-website-in-php/contact.php?messageStatus=sent"
-//       </script>';
-// die();
+echo '<script type="text/javascript">
+           window.location = "http://localhost:8888/multipage-website-in-php/contact.php?messageStatus=sent"
+      </script>';
+die();
 ?>
