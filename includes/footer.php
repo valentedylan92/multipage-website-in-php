@@ -34,6 +34,9 @@
         </div>
     </div>
 </footer>
+<script src="vendor/components/jquery/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
 <script>
     function initMap() {
         var mapDiv = document.getElementById('map');
@@ -54,6 +57,7 @@
     }
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIoX3ZWDDEyaBvo-voT-iXOFaJMETn6II&callback=initMap" async defer></script>
+<script src="service-worker.js"></script>
 
 </body>
 

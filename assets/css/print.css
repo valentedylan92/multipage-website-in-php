@@ -235,9 +235,8 @@ form input:not([type="submit"]):not([type="file"]) {
   border-bottom: 2px solid #0087a9; }
 form input[type="radio"] {
   width: auto;
-  margin-bottom: 0.5em;
-  margin-left: 1em;
-  display: inline-block; }
+  display: inline-block;
+  margin: 0.5em 0 0.5em 1em; }
 form input:not([type="radio"]) {
   width: 300px; }
 form input[type="submit"] {
@@ -253,7 +252,10 @@ form input[type="submit"]:hover {
   color: #fff;
   transition: color 1s ease, background 1s ease; }
 form textarea {
-  width: 300px; }
+  width: 100%; }
+form .radio-label {
+  font-size: 1em;
+  display: inline-block; }
 
 /*
 Table of Contents
