@@ -57,6 +57,12 @@
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIoX3ZWDDEyaBvo-voT-iXOFaJMETn6II&callback=initMap" async defer></script>
 <script src="service-worker.js"></script>
+<script src="upup.min.js"></script>
+  <script>
+    UpUp.start({
+      'content-url': 'offline.html'
+    });
+  </script>
 
 </body>
 
