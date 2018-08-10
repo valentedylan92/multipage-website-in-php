@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
@@ -13,13 +13,13 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <title>Lhiving</title>
 </head>
-<body>
+<body> -->
   <?php
-    include 'header.php'
+    include 'includes/header.php'
   ?>
 
   <main class="main">
-    <h1 class="organisation__title">Organisation</h1>
+    <h1 class="main__title">Organisation</h1>
     <section class="section section--personnel">
       <div class="section__container container personnel">
         <h2 class="personnel__title">Personnel</h2>
@@ -139,37 +139,37 @@
         <h2 class="subside__title">Subside</h2>
         <h3 class="subside__subtitle">Soutenue financièrement par :</h3>
         <div class="subside__container row">
-          <div class="subside__item col-md-4 offset-md-2 col-6">
-            <img src="http://placekitten.com/85/85" alt="" class="subside__img">
+          <div class="subside__item col-md-4 offset-md-2 col-12">
+            <img src="assets/img/vgc_logo.jpg" alt="" class="subside__img">
             <p class="subside__name">Vlaamse Gemeenschapscommissie</p>
           </div>
-          <div class="subside__item col-md-4 col-6">
-            <img src="http://placekitten.com/85/85" alt="" class="subside__img">
+          <div class="subside__item col-md-4 col-12">
+            <img src="assets/img/logoccc.png" alt="" class="subside__img">
             <p class="subside__name">la Commission Communautaire Commune</p>
           </div>
         </div>
           <h3 class="subside__subtitle">Nos partenaires :</h3>
           <div class="subside__container row">
-            <div class="subside__item col-md-4 col-6">
-              <img src="http://placekitten.com/85/85" alt="" class="subside__img">
+            <div class="subside__item col-md-4 col-12">
+              <img src="assets/img/logo_bgs.png" alt="" class="subside__img">
               <p class="subside__name">Brussels Gay Sports asbl</p>
             </div>
-            <div class="subside__item col-md-4 col-6">
-              <img src="http://placekitten.com/85/85" alt="" class="subside__img">
+            <div class="subside__item col-md-4 col-12">
+              <img src="assets/img/logo_cdg.png" alt="" class="subside__img">
               <p class="subside__name">Caritas Daden Gevraagd</p>
-            </div><div class="subside__item col-md-4 col-6">
-              <img src="http://placekitten.com/85/85" alt="" class="subside__img">
+            </div><div class="subside__item col-md-4 col-12">
+              <img src="assets/img/logo_belfius.png" alt="" class="subside__img">
               <p class="subside__name">Belfius SOS Fonds</p>
             </div>
-            <div class="subside__item col-md-4 col-6">
-              <img src="http://placekitten.com/85/85" alt="" class="subside__img">
+            <div class="subside__item col-md-4 col-12">
+              <img src="assets/img/Koning_Boudewijnstichting.jpg" alt="" class="subside__img">
               <p class="subside__name">Koning Boudewijnstichting</p>
-            </div><div class="subside__item col-md-4 col-6">
-              <img src="http://placekitten.com/85/85" alt="" class="subside__img">
+            </div><div class="subside__item col-md-4 col-12">
+              <img src="assets/img/Lions_Clubs_International_logo.svg.png" alt="" class="subside__img">
               <p class="subside__name">Lionsclub Brussel Munt</p>
             </div>
-            <div class="subside__item col-md-4 col-6">
-              <img src="http://placekitten.com/85/85" alt="" class="subside__img">
+            <div class="subside__item col-md-4 col-12">
+              <img src="assets/img/welzijnszorg.png" alt="" class="subside__img">
               <p class="subside__name">Welzijnszorg vzw</p>
             </div>
           </div>
@@ -181,5 +181,4 @@
     </section>
 
   </main>
-</body>
-</html>
+  <?php include 'includes/footer.php' ?>

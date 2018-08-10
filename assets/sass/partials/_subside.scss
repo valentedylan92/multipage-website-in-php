@@ -7,6 +7,12 @@
   &__subtitle{
     font-size: 20px;
     font-weight: bold;
+    background: $secondary-color;
+    color: white;
+    padding: 10px;
+  }
+  &__img{
+    max-width: 150px;
   }
   &__container{
     @include flex(row,flex-start,center);
@@ -14,18 +20,27 @@
     padding-bottom: 40px;
   }
   &__item{
-    @include flex (column,center,center);
+    @include flex (column,space-between,center);
+    min-height: 180px;
     padding: 20px 0;
   }
   &__name{
     font-style: italic;
     padding-top: 10px;
     font-size: 18px;
+    text-align: center;
   }
 
   &__subtext{
     font-style: italic;
     font-size: 15px;
     text-align:right;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .subside{
+    &__name{
+      max-width: 300px;
+    }
   }
 }

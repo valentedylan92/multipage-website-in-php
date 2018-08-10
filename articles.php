@@ -3,8 +3,10 @@
     // include('includes/articles/10.php');
     // printHeader();
     ?>
+    <h1 class="main__title">Derniers articles</h1>
 <div id="mainContent" class="container">
-    
+
+
 </div>
 <?php
 // $articles = scandir('includes/articles/');
