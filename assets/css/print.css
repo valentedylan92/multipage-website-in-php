@@ -340,33 +340,20 @@ body {
 }
 form label,
 form input {
-  display: inline-block;
   font-size: 1.2em;
-}
+  display: block; }
 form label {
-  width: 49%;
-  text-align: right;
-}
-form input {
-  margin-bottom: 0.5em;
-}
+  margin-bottom: 0; }
 form input:not([type="submit"]):not([type="file"]) {
-  padding: 0.5em;
+  padding: 0.5em 0.5em 0;
   border: none;
-  border-bottom: 2px solid #0087a9;
-  margin-left: 1em;
-}
+  border-bottom: 2px solid #0087a9; }
 form input[type="radio"] {
   width: auto;
-  margin-bottom: 0.5em;
-  margin-left: 1em;
-}
+  display: inline-block;
+  margin: 0.5em 0 0.5em 1em; }
 form input:not([type="radio"]) {
-  width: 300px;
-}
-form input[type="file"] {
-  margin-left: 1em;
-}
+  width: 300px; }
 form input[type="submit"] {
   display: block;
   margin: 2em auto;
@@ -379,15 +366,12 @@ form input[type="submit"]:hover {
   background-color: #ff7c2d;
   border: 2px solid #ff7c2d;
   color: #fff;
-  transition: color 1s ease, background 1s ease;
-}
-form select {
-  margin: 1em;
-}
+  transition: color 1s ease, background 1s ease; }
 form textarea {
-  margin-left: 1em;
-  width: 300px;
-}
+  width: 100%; }
+form .radio-label {
+  font-size: 1em;
+  display: inline-block; }
 
 /*
 Table of Contents
