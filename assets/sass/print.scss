@@ -1,7 +1,6 @@
-@import "compass/reset";
-
+// @import "compass/reset";
 @import "mixins/mixins";
-
+@import "utils/colors";
 @import "partials/main";
 @import "partials/section";
 @import "partials/home";
@@ -11,4 +10,7 @@
 @import "partials/personnel";
 @import "partials/box-info";
 @import "partials/subside";
+@import "partials/contact";
+@import "partials/articles";
 @import "partials/header";
+@import "partials/footer";

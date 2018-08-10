@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
@@ -13,16 +13,16 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <title>Lhiving</title>
 </head>
-<body>
+<body> -->
   <?php
-    include 'header.php'
+    include 'includes/header.php'
   ?>
   <main class="main">
     <section class="section section--home">
       <div class="section__container container home">
         <h1 class="home__title"><img src="assets/img/logo.gif" alt="Lhiving" class="home__logo"></h1>
         <p class="home__subtitle"></p>
-        <a href="" class="section__cta">Soutenez nous</a>
+        <a href="#donation" class="section__cta">Soutenez nous</a>
       </div>
     </section>
     <section class="section section--presentation">
@@ -104,7 +104,7 @@
         </div>
       </div>
     </section>
-    <section class="section section--donation">
+    <section class="section section--donation" id="donation">
       <div class="section__container container">
         <h2 class="section__title">Soutenez nous !</h2>
         <p class="section__text">
@@ -114,9 +114,8 @@
         <p class="section__text">
           Notre n° de compte: BE29 0013 0051 4564.
         </p>
-        <a href="" class="section__cta"></a>
+        <a href="" class="section__cta">Faire un don</a>
       </div>
     </section>
   </main>
-</body>
-</html>
+  <?php include 'includes/footer.php' ?>

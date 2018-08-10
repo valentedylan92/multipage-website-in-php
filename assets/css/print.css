@@ -1,57 +1,592 @@
 /*
-Error: File to import not found or unreadable: compass/reset.
-        on line 1 of sass/print.scss
+Table of Contents
 
-1: @import "compass/reset";
-2: 
-3: @import "mixins/mixins";
-4: 
-5: @import "partials/main";
-6: @import "partials/section";
+1.0 Colors
 
-Backtrace:
-sass/print.scss:1
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:67:in `rescue in import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:45:in `import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:28:in `imported_file'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:37:in `css_import?'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:161:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:10:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.25/lib/sass/engine.rb:384:in `_render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.25/lib/sass/engine.rb:301:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:331:in `block in watch'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.25/vendor/listen/lib/listen/listener.rb:252:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.25/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.25/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:254:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: compass/reset.\A         on line 1 of sass/print.scss\A \A 1: @import \"compass/reset\";\A 2: \A 3: @import \"mixins/mixins\";\A 4: \A 5: @import \"partials/main\";\A 6: @import \"partials/section\";"; }
+
+
+/*
+
+* 1.0 Colors
+
+*/
+
+body {
+    font-family: "Lato", "Arial", sans-serif;
+}
+
+.main__title {
+    font-weight: bold;
+    text-align: center;
+    font-size: 45px;
+}
+
+.section__container {
+    padding: 50px 20px;
+}
+
+.section__title {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 35px;
+    font-weight: 700;
+}
+
+.section__text {
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.section__cta {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.7s background ease;
+    background-color: #ff7c2d;
+    color: white;
+    text-decoration: none;
+    padding: 15px 15px;
+    max-width: 250px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.section__cta:hover {
+    background-color: #f95e00;
+}
+
+.section__cta:hover {
+    color: white;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .section__container {
+        padding: 30px 10px;
+    }
+    .section__title {
+        font-size: 25px;
+    }
+}
+
+.section--home {
+    width: 100%;
+    height: 600px;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 600px;
+}
+
+.home__title {
+    text-align: center;
+}
+
+.home__logo {
+    width: 50%;
+}
+
+.section--presentation {
+    width: 100%;
+    min-height: 400px;
+    background: #0087a9;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.section--pillier {
+    width: 100%;
+    min-height: 700px;
+}
+
+.section--pillier .section__title {
+    color: #ff7c2d;
+}
+
+.section--pillier .section__text {
+    margin-bottom: 20px;
+}
+
+.pilliers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.pilliers__text {
+    font-size: 17px;
+    line-height: 1.5;
+    text-align: justify;
+    color: black;
+}
+
+.pilliers__img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .pilliers {
+        flex-direction: column;
+    }
+    .pillier__item {
+        margin-bottom: 20px;
+    }
+}
+
+.listings {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.listings__left {
+    padding-left: 20px;
+}
+
+.listings__right {
+    padding-left: 20px;
+}
+
+.listings__description {
+    font-size: 20px;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.listing {
+    list-style: none;
+}
+
+.listing__item {
+    font-size: 18px;
+    padding-left: 15px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.listing__icon {
+    margin-right: 15px;
+    color: #ff7c2d;
+}
+
+@media only screen and (max-width: 768px) {
+    .listings {
+        flex-direction: column;
+    }
+    .listings__left {
+        margin-bottom: 20px;
+        padding: 0;
+        padding-left: 5px;
+    }
+    .listings__right {
+        padding: 0;
+        padding-left: 5px;
+    }
+    .listing__item {
+        font-size: 15px;
+        padding: 0;
+    }
+}
+
+.personnel__title {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.personnel__subtitle {
+    font-size: 20px;
+    font-weight: bold;
+    background: #0087a9;
+    color: white;
+    padding: 10px;
+}
+
+.personnel__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+}
+
+.personnel__item {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.personnel__name {
+    font-style: italic;
+    padding-top: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.personnel__img {
+    border-radius: 100%;
+}
+
+.personnel__subtext {
+    font-style: italic;
+    font-size: 15px;
+    text-align: right;
+}
+
+@media only screen and (max-width: 600px) {
+    .personnel__name {
+        font-size: 14px;
+    }
+}
+
+.section--box {
+    background: #0087a9;
+    color: white;
+}
+
+.box-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 500px;
+}
+
+.box-info__left {
+    background-image: url("../img/office.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    min-height: 500px;
+}
+
+.box-info__right {
+    padding: 30px 0 30px 20px;
+    box-sizing: border-box;
+    height: 500px;
+}
+
+.box-info__text {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.box-info__img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .box-info {
+        flex-direction: column;
+        padding: 0;
+    }
+    .box-info__img {
+        margin-bottom: 20px;
+    }
+    .box-info__right {
+        height: auto;
+        padding: 10px;
+        font-size: 12px;
+    }
+    .box-info__left {
+        min-height: 250px;
+    }
+}
+
+.subside__title {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.subside__subtitle {
+    font-size: 20px;
+    font-weight: bold;
+    background: #0087a9;
+    color: white;
+    padding: 10px;
+}
+
+.subside__img {
+    max-width: 150px;
+}
+
+.subside__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+}
+
+.subside__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 180px;
+    padding: 20px 0;
+}
+
+.subside__name {
+    font-style: italic;
+    padding-top: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.subside__subtext {
+    font-style: italic;
+    font-size: 15px;
+    text-align: right;
+}
+
+@media only screen and (max-width: 600px) {
+    .subside__name {
+        max-width: 300px;
+    }
+}
+
+form label,
+form input {
+    display: inline-block;
+    font-size: 1.2em;
+}
+
+form label {
+    width: 49%;
+    text-align: right;
+}
+
+form input {
+    margin-bottom: 0.5em;
+}
+
+form input:not([type="submit"]):not([type="file"]) {
+    padding: 0.5em;
+    border: none;
+    border-bottom: 2px solid #0087a9;
+    margin-left: 1em;
+}
+
+form input[type="radio"] {
+    width: auto;
+    margin-bottom: 0.5em;
+    margin-left: 1em;
+}
+
+form input:not([type="radio"]) {
+    width: 300px;
+}
+
+form input[type="file"] {
+    margin-left: 1em;
+}
+
+form input[type="submit"] {
+    display: block;
+    margin: 2em auto;
+    background-color: #fff;
+    padding: 10px 0;
+    border: 2px solid #ff7c2d;
+    color: #ff7c2d;
+}
+
+form input[type="submit"]:hover {
+    background-color: #ff7c2d;
+    border: 2px solid #ff7c2d;
+    color: #fff;
+    transition: color 1s ease, background 1s ease;
+}
+
+form select {
+    margin: 1em;
+}
+
+form textarea {
+    margin-left: 1em;
+    width: 300px;
+}
+
+
+/*
+Table of Contents
+
+1.0 List
+2.0 Detail
+
+*/
+
+
+/*
+
+* 1.0 List
+
+*/
+
+.article-item:not(:first-child) {
+    border-top: 2px solid #0087a9;
+    padding: 40px 0 20px;
+}
+
+.article-content img {
+    height: 200px;
+}
+
+.article-title {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.article-date {
+    font-size: 12px;
+    color: #0087a9;
+}
+
+@media only screen and (max-width: 600px) {
+    iframe {
+        width: 100%;
+    }
+}
+
+
+/*
+
+* 2.0 Detail
+
+*/
+
+#allArticlesBtn,
+#prevArticlesBtn,
+#nextArticlesBtn {
+    display: block;
+    margin: 2em 1em;
+    background-color: #fff;
+    padding: 10px 0;
+    border: 2px solid #ff7c2d;
+    color: #ff7c2d;
+    width: 200px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#allArticlesBtn:hover,
+#prevArticlesBtn:hover,
+#nextArticlesBtn:hover {
+    background-color: #ff7c2d;
+    border: 2px solid #ff7c2d;
+    color: #fff;
+    transition: color 1s ease, background 1s ease;
+}
+
+#prevArticlesBtn.disabled,
+#nextArticlesBtn.disabled {
+    opacity: 0.4;
+    cursor: initial;
+}
+
+#prevArticlesBtn.disabled:hover,
+#nextArticlesBtn.disabled:hover {
+    background-color: #fff;
+    color: #ff7c2d;
+}
+
+.header__navbar {
+    height: 80px;
+}
+
+.header__item {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-right: 15px;
+    transition: color 1s ease;
+}
+
+.header__logo {
+    height: 50px;
+}
+
+.header__icon {
+    font-size: 32px;
+    color: #ff7c2d;
+}
+
+#navbarNavAltMarkup {
+    flex-grow: initial;
+    margin-left: auto;
+}
+
+footer {
+    background-color: #0087a9;
+    color: #fff;
+    width: 100%;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer a:hover {
+    color: #ff7c2d;
+    transition: color 1s ease;
+    text-decoration: none;
+}
+
+footer ul {
+    padding: 0;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+footer .container {
+    padding-bottom: 0;
+}
+
+footer .nav-link {
+    padding: 0.3em 1em;
+}
+
+footer .listing__item {
+    margin-bottom: 10px;
+}
+
+footer #map {
+    height: 200px;
+}
+
+footer #copyright {
+    text-align: center;
+    margin-top: 1em;
+}

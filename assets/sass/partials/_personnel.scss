@@ -1,9 +1,4 @@
-.organisation__title{
-  text-align: center;
-  font-size: 45px;
-  font-weight: bold;
 
-}
 .personnel{
   &__title{
     font-size: 25px;
@@ -13,6 +8,9 @@
   &__subtitle{
     font-size: 20px;
     font-weight: bold;
+    background: $secondary-color;
+    color: white;
+    padding: 10px;
   }
   &__container{
     @include flex(row,flex-start,center);
@@ -28,6 +26,7 @@
     font-style: italic;
     padding-top: 10px;
     font-size: 18px;
+    text-align: center;
   }
   &__img{
     border-radius: 100%;
@@ -38,4 +37,12 @@
     font-size: 15px;
     text-align:right;
   }
+}
+
+@media only screen and (max-width: 600px) {
+    .personnel {
+      &__name{
+        font-size: 14px;
+      }
+    }
 }
