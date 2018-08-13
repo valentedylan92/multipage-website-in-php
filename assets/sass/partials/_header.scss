@@ -1,0 +1,25 @@
+.header{
+  &__navbar{
+    height: 80px;
+  }
+
+  &__item{
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-right: 15px;
+    transition: color 1s ease;
+  }
+  &__logo{
+    height: 50px;
+  }
+  &__icon{
+    font-size: 32px;
+    color: #ff7c2d;
+    
+  }
+}
+
+#navbarNavAltMarkup{
+  flex-grow: initial;
+  margin-left: auto;
+}

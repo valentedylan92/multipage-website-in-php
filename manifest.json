@@ -1,0 +1,18 @@
+          {
+              "short_name": "Lhiving",
+              "name": "Lhiving",
+              "display": "standalone",
+              "background_color": "#ffffff",
+              "theme_color": "#ffffff",
+              "icons": [{
+                      "src": "../img/logo.gif",
+                      "type": "image/gif",
+                      "sizes": "192x192"
+                  },
+                  {
+                      "src": "../img/logo.gif",
+                      "type": "image/gif",
+                      "sizes": "512x512"
+                  }
+              ]
+          }

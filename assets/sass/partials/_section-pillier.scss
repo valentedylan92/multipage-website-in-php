@@ -1,0 +1,36 @@
+.section--pillier{
+  width: 100%;
+  min-height: 700px;
+  .section__title{
+    color: #ff7c2d;
+  }
+  .section__text{
+    margin-bottom: 20px;
+  }
+}
+
+.pilliers{
+  @include flex(row,space-between,flex-start);
+  margin-bottom: 30px;
+  &__text{
+    font-size: 17px;
+    line-height: 1.5;
+    text-align: justify;
+    color: black;
+  }
+  &__img{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .pilliers {
+      flex-direction: column;
+    }
+    .pillier__item{
+      margin-bottom: 20px;
+    }
+}
