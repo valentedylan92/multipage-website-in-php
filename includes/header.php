@@ -27,7 +27,6 @@
         <div class="navbar-nav">
         <a class="nav-item nav-link header__item active" href="organisation.php">Organisation</a>
         <a class="nav-item nav-link header__item " href="articles.php">Articles</a>
-        <a class="nav-item nav-link header__item " href="#">Documents</a>
         <a class="nav-item nav-link header__item " href="contact.php">Contact</a>
         </div>
     </div>

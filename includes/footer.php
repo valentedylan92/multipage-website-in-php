@@ -8,7 +8,6 @@
                         <a class="nav-item nav-link header__item" href="index.php">Accueil</a>
                         <a class="nav-item nav-link header__item" href="organisation.php">Organisation</a>
                         <a class="nav-item nav-link header__item active" href="articles.php">Articles</a>
-                        <a class="nav-item nav-link header__item " href="#">Documents</a>
                         <a class="nav-item nav-link header__item " href="contact.php">Contact</a>
                     </div>
                 </nav>
@@ -34,9 +33,10 @@
         </div>
     </div>
 </footer>
-<script src="vendor/components/jquery/jquery.slim.min.js"></script>
+<script src="vendor/components/jquery/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="assets/js/app.js"></script>
 <script>
     function initMap() {
         var mapDiv = document.getElementById('map');

@@ -8,15 +8,17 @@
     function addAuthFields() {
         if(!file_exists('includes/auth.php')){
             echo '<label for="contact-title">Adresse mail SMTP</label>
-            <input type="text" name="username" id="username"><br>
+            <input type="text" name="username" id="username">
             <label for="contact-title">Mot de passe mail SMTP</label>
-            <input type="password" name="password" id="password"><br>';
-        }        
+            <input type="password" name="password" id="password">';
+        }
     }
 ?>
 
 <div id="mainContent" class="container">
     <!-- <h2>Contact</h2> -->
+    <h1 class="main__title">Contact</h1>
+
     <div class="row">
         <div class="col-12">
             <?= $status ?>

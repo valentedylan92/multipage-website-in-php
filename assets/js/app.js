@@ -25,7 +25,7 @@ function getArticlesExcerpts() {
         $('#mainContent').empty();
         $.each(temp, function(key, obj) {
             let id = obj.v.id;
-            let articleExcerpt = '<div class="row">';
+            let articleExcerpt = '<div class="row article">';
             articleExcerpt = '<div class="article-item col-12">';
             articleExcerpt += '<h1 class="article-title"><a onclick="getArticle(' + obj.v.id + ')">' + obj.v.title + '</a></h1>';
             articleExcerpt += '<p class="article-date">' + obj.v.date + '</p>';
@@ -36,7 +36,7 @@ function getArticlesExcerpts() {
         });
     });
 }
-getArticlesExcerpts();
+// getArticlesExcerpts();
 
 // Get all articles
 function getAllArticles() {
@@ -111,3 +111,21 @@ function getArticle(x) {
         });
     });
 }
+
+$(document).ready(function() {
+
+    $("#contact-first-name").focusout(function() {
+        let inputFirstName = $(this).val();
+        console.log(inputFirstName);
+        if (inputFirstName === "") {
+            console.log("empty");
+        } else if (!/^[a-zA-Z]+$/.test(inputFirstName)) {
+            console.log("uniquement des lettres !");
+        }
+    });
+    // TODO
+    // create function to check input w/ only letters allowed (param input ??)
+    // use this function for fn and sn
+    // create function to test email
+
+})

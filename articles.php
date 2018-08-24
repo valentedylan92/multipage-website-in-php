@@ -3,8 +3,10 @@
     // include('includes/articles/10.php');
     // printHeader();
     ?>
+    <h1 class="main__title">Derniers articles</h1>
 <div id="mainContent" class="container">
-    
+
+
 </div>
 <?php
 // $articles = scandir('includes/articles/');
@@ -14,8 +16,8 @@
 //     // include('includes/articles/'.$article);
 // }
 ?>
-    <script src="vendor/components/jquery/jquery.min.js"></script>
-    <script src="assets/js/app.js"></script>
+    <!-- <script src="vendor/components/jquery/jquery.min.js"></script> -->
+    <!-- <script src="assets/js/app.js"></script> -->
 <?php
     include('includes/footer.php');
 ?>
